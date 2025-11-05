@@ -6,7 +6,7 @@
     <field name="code">model.search([('firs_status','=','error')], limit=50).mapped('send_to_firs')</field>
     <field name="interval_number">15</field>
     <field name="interval_type">minutes</field>
-    <field name="numbercall">-1</field>
     <field name="active">True</field>
+    <field name="repeat_missed">True</field>
   </record>
 </odoo>

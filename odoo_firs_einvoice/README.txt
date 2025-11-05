@@ -1,4 +1,4 @@
-FIRS e-Invoice Integration Module (v1.0.7)
+FIRS e-Invoice Integration Module (v1.0.8)
 ==========================================
 
 This module integrates Odoo 18 with Nigeria's FIRS e-Invoicing (TaxPro Max).
@@ -12,7 +12,7 @@ Features:
 - SaaS-safe views and report templates for Odoo Cloud / Enterprise 18+.
 
 Installation:
-1. Upload `odoo_firs_einvoice_v1.0.7.zip` to your Odoo `addons` folder or Apps interface on odoo.com.
+1. Upload `odoo_firs_einvoice_v1.0.8.zip` to your Odoo `addons` folder or Apps interface on odoo.com.
 2. Update Apps List and install "FIRS e-Invoice Integration".
 3. Navigate to Settings → FIRS e-Invoice Integration section.
 4. Enter your API URL, Username, Password, and TIN.
@@ -24,3 +24,5 @@ Notes:
 - If FIRS requires client-certificate or OAuth authentication, the client code must be extended accordingly.
 
 For support or customization, contact your Odoo administrator or technical consultant.
+
+Cron retry interval: 15 minutes (repeat_missed=True)
