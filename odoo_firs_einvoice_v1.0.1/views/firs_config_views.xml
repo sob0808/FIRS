@@ -1,0 +1,23 @@
+<odoo>
+  <record id="view_firs_config_settings" model="ir.ui.view">
+    <field name="name">firs.config.settings</field>
+    <field name="model">res.config.settings</field>
+    <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//div[@id='settings']" position="inside">
+        <div class="app_settings_block" string="FIRS e-Invoice" name="firs_config">
+          <h2>FIRS e-Invoice Integration</h2>
+          <div class="row mt16 o_settings_container">
+            <div class="col-12 col-lg-6">
+              <field name="firs_environment"/>
+              <field name="firs_api_url"/>
+              <field name="firs_api_username"/>
+              <field name="firs_api_password" password="True"/>
+              <field name="firs_tin"/>
+            </div>
+          </div>
+        </div>
+      </xpath>
+    </field>
+  </record>
+</odoo>

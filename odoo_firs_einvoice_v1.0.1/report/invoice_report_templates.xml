@@ -1,0 +1,14 @@
+<odoo>
+  <template id="report_invoice_document_inherit_firs" inherit_id="account.report_invoice_document">
+    <xpath expr="//div[@class='footer']" position="inside">
+      <t t-if="doc.firs_irn">
+        <div class="firs-info" style="margin-top:10px;">
+          <p><strong>FIRS IRN:</strong> <span t-esc="doc.firs_irn"/></p>
+          <t t-if="doc.firs_qr">
+            <img t-att-src="'data:image/png;base64,%s' % (doc.firs_qr.decode() if isinstance(doc.firs_qr, bytes) else doc.firs_qr)" style="width:120px;height:120px;"/>
+          </t>
+        </div>
+      </t>
+    </xpath>
+  </template>
+</odoo>
