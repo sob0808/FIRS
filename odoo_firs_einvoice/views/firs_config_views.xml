@@ -12,8 +12,12 @@
           <field name="firs_api_username"/>
           <field name="firs_api_password" password="True"/>
           <field name="firs_tin"/>
-          <button name="action_test_connection" type="object" string="Test FIRS Connection" class="btn-secondary"/>
-          <label string="Configure FIRS e-Invoice API credentials. Use Sandbox for test, Production for live."/>
+          <button name="action_test_connection" type="object"
+                  string="Test FIRS Connection"
+                  class="btn-secondary"/>
+          <div class="o_form_label text-muted">
+            Configure FIRS e-Invoice API credentials. Use Sandbox for test, Production for live.
+          </div>
         </group>
       </xpath>
     </field>
