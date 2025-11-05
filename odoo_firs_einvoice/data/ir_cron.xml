@@ -7,6 +7,6 @@
     <field name="interval_number">15</field>
     <field name="interval_type">minutes</field>
     <field name="active">True</field>
-    <field name="repeat_missed">True</field>
+    <field name="nextcall" eval="'2025-11-05 13:29:21'"/>
   </record>
 </odoo>

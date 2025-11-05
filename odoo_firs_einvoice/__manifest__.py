@@ -1,6 +1,6 @@
 {
     "name": "FIRS e-Invoice Integration",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "summary": "Automatic connection to FIRS e-Invoicing (TaxPro Max)",
     "category": "Accounting",
     "author": "Your Company",
