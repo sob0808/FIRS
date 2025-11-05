@@ -1,6 +1,7 @@
 from odoo.tests import TransactionCase
 
 class TestFirsIntegration(TransactionCase):
+
     def test_invoice_payload(self):
         inv = self.env['account.move'].create({
             'move_type': 'out_invoice',

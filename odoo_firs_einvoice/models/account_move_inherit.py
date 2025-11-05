@@ -44,7 +44,10 @@ class AccountMove(models.Model):
                 img.save(buf, format='PNG')
                 self.firs_qr = base64.b64encode(buf.getvalue())
             self.firs_status = 'validated'
-            self.firs_response = json.dumps(data)
+            try:
+                self.firs_response = json.dumps(data)
+            except:
+                self.firs_response = str(data)
         else:
             self.firs_status = 'error'
             self.firs_response = result.get('error')

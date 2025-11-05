@@ -4,7 +4,7 @@
     <field name="model">res.config.settings</field>
     <field name="inherit_id" ref="base.res_config_settings_view_form"/>
     <field name="arch" type="xml">
-      <xpath expr="//sheet" position="inside">
+      <xpath expr="//form" position="inside">
         <group string="FIRS e-Invoice Integration" name="firs_config_group">
           <separator string="FIRS e-Invoice (TaxPro Max)"/>
           <field name="firs_environment"/>
@@ -12,7 +12,8 @@
           <field name="firs_api_username"/>
           <field name="firs_api_password" password="True"/>
           <field name="firs_tin"/>
-          <label string="Configure FIRS e-Invoice API credentials. Sandbox for test, Production for live."/>
+          <button name="action_test_connection" type="object" string="Test FIRS Connection" class="btn-secondary"/>
+          <label string="Configure FIRS e-Invoice API credentials. Use Sandbox for test, Production for live."/>
         </group>
       </xpath>
     </field>
