@@ -1,6 +1,6 @@
 <odoo>
   <template id="report_invoice_document_inherit_firs" inherit_id="account.report_invoice_document">
-    <!-- Generated via Odoo-FIRS Integration v1.0.7 -->
+    <!-- Generated via Odoo-FIRS Integration v1.1.0 -->
     <xpath expr="//div[contains(@class, 'page')]" position="inside">
       <t t-if="doc.firs_irn">
         <div style="position:absolute; right:20px; top:20px; width:150px; border:1px solid #777; padding:6px; text-align:center; font-size:10px;">

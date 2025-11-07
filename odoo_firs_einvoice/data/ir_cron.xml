@@ -3,10 +3,10 @@
     <field name="name">Retry FIRS e-Invoice Submission</field>
     <field name="model_id" ref="account.model_account_move"/>
     <field name="state">code</field>
-    <field name="code">model.search([('firs_status','=','error')], limit=50).mapped('send_to_firs')</field>
+    <field name="code">model.search([('firs_status','=','error')], limit=50).mapped('action_firs_send')</field>
     <field name="interval_number">15</field>
     <field name="interval_type">minutes</field>
     <field name="active">True</field>
-    <field name="nextcall" eval="'2025-11-05 13:29:21'"/>
+    <field name="nextcall" eval="'2025-11-07 11:30:50'"/>
   </record>
 </odoo>
